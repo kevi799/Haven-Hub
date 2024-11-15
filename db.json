@@ -1,0 +1,116 @@
+{
+  "houses": [
+    {
+      "id": "1",
+      "title": "Countryside Retreat",
+      "location": "Open Field, Rural Area",
+      "price": 3000,
+      "description": "A beautiful retreat in the countryside, perfect for a peaceful escape with stunning surroundings.",
+      "size": "3200 sq ft",
+      "amenities": [
+        "Spacious Garden",
+        "Large Windows",
+        "Secluded Location"
+      ],
+      "images": [
+        "https://img.freepik.com/free-photo/house-isolated-field_1303-23773.jpg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "2",
+      "title": "Modern Cottage",
+      "location": "Suburban Neighborhood",
+      "price": 4500,
+      "description": "A modern cottage with a small courtyard and stylish design, located in a charming neighborhood.",
+      "size": "2400 sq ft",
+      "amenities": [
+        "Courtyard",
+        "Eco-Friendly Materials",
+        "Solar Panels"
+      ],
+      "images": [
+        "https://img.freepik.com/premium-photo/modern-cottage-house-with-small-courtyard_250132-17013.jpg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "3",
+      "title": "Elegant Suburban Home",
+      "location": "Greenwood Estates",
+      "price": 5200,
+      "description": "A beautiful modern suburban home with white siding, black shutters, and a large green lawn.",
+      "size": "3600 sq ft",
+      "amenities": [
+        "Large Lawn",
+        "Tree-lined Surroundings",
+        "Modern Kitchen"
+      ],
+      "images": [
+        "https://img.freepik.com/premium-photo/beautiful-modern-suburban-home-with-white-siding-black-shutters-large-green-lawn-surrounded-by-trees-partly-cloudy-sky_124507-305066.jpg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "4",
+      "title": "Luxurious Residence",
+      "location": "Downtown",
+      "price": 7800,
+      "description": "An upscale modern residence with luxurious amenities, offering an elegant lifestyle in the city.",
+      "size": "5000 sq ft",
+      "amenities": [
+        "Private Gym",
+        "Rooftop Pool",
+        "Home Theater"
+      ],
+      "images": [
+        "https://img.freepik.com/premium-photo/3d-rendering-individual-modern-house_21255-27.jpg?semt=ais_hybrid"
+      ],
+      "status": "available",
+      "type": "house"
+    }
+  ],
+  "apartments": [
+    {
+      "id": "1",
+      "title": "Spacious 2-Bedroom Apartment in Downtown",
+      "location": "Downtown, City Center",
+      "price": 1200,
+      "description": "A modern 2-bedroom apartment located in the heart of downtown, featuring open living spaces, a fully-equipped kitchen, and stunning city views. Perfect for urban living.",
+      "size": "1200 sq ft",
+      "amenities": [
+        "Balcony",
+        "Gym",
+        "Swimming Pool",
+        "24/7 Security"
+      ],
+      "images": {
+        "exterior": [
+          "https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg",
+          "https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg",
+          "https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg",
+          "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg",
+          "https://images.pexels.com/photos/2194399/pexels-photo-2194399.jpeg"
+        ],
+        "interior": [
+          "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg",
+          "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2721.jpg",
+          "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661469.jpg",
+          "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661455.jpg",
+          "https://img.freepik.com/free-photo/hong-kong-terrace_181624-6391.jpg",
+          "https://img.freepik.com/premium-photo/low-angle-view-buildings-city_1048944-4008141.jpg",
+          "https://img.freepik.com/premium-photo/illustration-living-room-interior_252025-45690.jpg",
+          "https://img.freepik.com/free-photo/3d-modern-bedroom-interior_1048-7303.jpg",
+          "https://img.freepik.com/free-photo/living-room-interior_1048-8212.jpg",
+          "https://img.freepik.com/free-photo/vertical-shot-modern-table-nice-living-room_181624-59476.jpg",
+          "https://img.freepik.com/premium-photo/hotel-room_118342-1432.jpg"
+        ]
+      },
+      "status": "bought",
+      "type": "apartment"
+    }
+  ]
+}
