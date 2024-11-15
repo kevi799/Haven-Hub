@@ -22,7 +22,7 @@ function Navbar() {
   };
 
   const liStyle = {
-    margin: "0 15px",
+    margin: "0 15px", // Adjust this margin for spacing between links
   };
 
   const linkStyle = {
@@ -31,10 +31,13 @@ function Navbar() {
     fontSize: "1.2rem",
     fontWeight: "bold",
     transition: "color 0.3s ease",
+    padding: "10px", // Add padding here for space around the links
+    borderRadius: "4px", // Optional: add rounded corners to the links
   };
 
   const linkHoverStyle = {
     color: "#FFEB3B",
+    backgroundColor: "rgba(255, 235, 59, 0.2)", // Optional: background color change on hover
   };
 
   return (
@@ -69,12 +72,16 @@ function Navbar() {
           >
             Houses
           </Link>
+        </li>
+        <li style={liStyle}>
           <Link
-            to="/User"
+            to="/user"
             style={linkStyle}
             onMouseOver={(e) => (e.target.style.color = linkHoverStyle.color)}
             onMouseOut={(e) => (e.target.style.color = linkStyle.color)}
-          ></Link>
+          >
+            User
+          </Link>
         </li>
       </ul>
     </nav>
