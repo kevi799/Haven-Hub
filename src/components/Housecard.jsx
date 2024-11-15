@@ -10,7 +10,7 @@ function HouseCard({ id, title, location, price, status, onStatusChange, onDelet
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     margin: '15px',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-    alignItems: 'center',
+    alignItems: 'center', // Ensures all content is aligned vertically
   };
 
   const houseCardHoverStyle = {
@@ -19,16 +19,16 @@ function HouseCard({ id, title, location, price, status, onStatusChange, onDelet
   };
 
   const imgStyle = {
-    width: '200px', // Image width for the card
+    width: '200px', // Adjust width for image to fit row layout
     height: 'auto',
-    borderRadius: '8px', // Border radius to make the image look like part of the card
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Light shadow around the image
-    objectFit: 'cover', // Ensure the image fits the container without stretching
+    borderRadius: '5px',
+    marginRight: '20px', // Space between image and text
+    objectFit: 'cover',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   };
 
   const textStyle = {
-    flex: 1, // Text section takes up remaining space
-    marginLeft: '20px', // Space between the image and text
+    flex: 1, // Allow text section to take remaining space
   };
 
   const buttonContainerStyle = {
@@ -65,9 +65,7 @@ function HouseCard({ id, title, location, price, status, onStatusChange, onDelet
       onMouseOver={(e) => (e.currentTarget.style = { ...houseCardStyle, ...houseCardHoverStyle })}
       onMouseOut={(e) => (e.currentTarget.style = houseCardStyle)}
     >
-      <div>
-        <img src={images} alt={title} style={imgStyle} />
-      </div>
+      <img src={images} alt="" style={imgStyle} />
       <div style={textStyle}>
         <h3>{title}</h3>
         <p>Location: {location}</p>

@@ -22,24 +22,77 @@ const Home = () => {
   const titleStyle = {
     fontSize: '3.5rem',
     fontWeight: 'bold',
-    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)', // Adds a shadow for better visibility
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
     margin: '0',
-    color: '#ffffff', // ensures title is white
+    color: '#ffffff',
+    '@media (max-width: 768px)': {
+      fontSize: '2rem', // Adjust title font size on smaller screens
+    },
   };
 
   const subtitleStyle = {
     fontSize: '1.5rem', 
     marginTop: '15px',
-    color: '#f5f5f5', // a softer color for the subtitle
+    color: '#f5f5f5',
     maxWidth: '600px',
     marginLeft: 'auto',
     marginRight: 'auto',
     lineHeight: '1.6',
+    '@media (max-width: 768px)': {
+      fontSize: '1.2rem', // Adjust subtitle font size on smaller screens
+    },
+  };
+
+  const footerStyle = {
+    position: 'relative',
+    bottom: 0,
+    width: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    color: 'white',
+    padding: '1rem',
+    '@media (max-width: 768px)': {
+      padding: '0.5rem', // Reduce footer padding on small screens
+    },
+  };
+
+  const footerContentStyle = {
+    maxWidth: '7xl',
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '0 1rem',
+    '@media (max-width: 768px)': {
+      flexDirection: 'column', // Stack footer items vertically on smaller screens
+      textAlign: 'center', // Center text for mobile devices
+    },
+  };
+
+  const contactSectionStyle = {
+    textAlign: 'left',
+    '@media (max-width: 768px)': {
+      textAlign: 'center', // Center contact info on small screens
+    },
+  };
+
+  const relatedLinksStyle = {
+    textAlign: 'left',
+    '@media (max-width: 768px)': {
+      textAlign: 'center', // Center related links on small screens
+    },
+  };
+
+  const socialLinksStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '0.5rem',
+    '@media (max-width: 768px)': {
+      justifyContent: 'center',
+    },
   };
 
   return (
-    <div>
-      {/* Home Section */}
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <div style={containerStyle}>
         <h1 style={titleStyle}>Haven Hub: Redefining Real Estate Online</h1>
         <p style={subtitleStyle}>
@@ -47,65 +100,63 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Footer Section */}
-      <footer className="fixed bottom-0 w-full bg-black bg-opacity-50 text-white py-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
-          
-          <div className="text-left">
-            <h3 className="text-lg font-semibold">Contact Us</h3>
-            <div className="flex items-center mb-1">
-              <span className="mr-2">📍</span>
+      <footer style={footerStyle}>
+        <div style={footerContentStyle}>
+          <div style={contactSectionStyle}>
+            <h3 style={{ fontSize: '1.125rem', fontWeight: '600' }}>Contact Us</h3>
+            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.25rem' }}>
+              <span style={{ marginRight: '0.5rem' }}>📍</span>
               <span>The Nest Business Park</span>
             </div>
-            <div className="flex items-center mb-1">
-              <span className="mr-2">📞</span>
+            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.25rem' }}>
+              <span style={{ marginRight: '0.5rem' }}>📞</span>
               <span>0745712570</span>
             </div>
-            <div className="flex items-center">
-              <span className="mr-2">📧</span>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <span style={{ marginRight: '0.5rem' }}>📧</span>
               <span>havenhub.co.ke</span>
             </div>
           </div>
 
-          <div className="text-left">
-            <h3 className="text-lg font-semibold">Related Links</h3>
-            <ul className="list-none p-0">
+          <div style={relatedLinksStyle}>
+            <h3 style={{ fontSize: '1.125rem', fontWeight: '600' }}>Related Links</h3>
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
               {["Find your home", "Search", "All Properties", "Recommended for you", "About Us", "Contact Us"].map((link, index) => (
-                <li key={index} className="mb-1">
-                  <Link to="/" className="text-white no-underline hover:underline">
+                <li key={index} style={{ marginBottom: '0.25rem' }}>
+                  <a href="/" style={{ color: 'white', textDecoration: 'none' }}>
                     {link}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="bg-gray-200 text-gray-800 p-4 rounded text-center">
-            <h4 className="mb-1">Contact Us:</h4>
-            <p className="m-0 text-lg font-bold">0740 712 579</p>
+          <div style={{ backgroundColor: '#e2e2e2', color: '#4a4a4a', padding: '1rem', borderRadius: '0.375rem', textAlign: 'center' }}>
+            <h4 style={{ marginBottom: '0.25rem' }}>Contact Us:</h4>
+            <p style={{ margin: 0, fontSize: '1.125rem', fontWeight: '700' }}>0740 712 579</p>
           </div>
         </div>
 
-        <div className="mt-4 text-center text-sm">
+        <div style={{ marginTop: '1rem', textAlign: 'center', fontSize: '0.875rem' }}>
           Achieving your home ownership dream is easier when you work with Haven Hub.
         </div>
 
-        <div className="mt-6 text-center text-xs bg-[#003366] py-2">
-          <p className="m-0">© Haven Hub - All rights reserved</p>
-          <div className="mt-2 flex justify-center">
-            <a href="/" className="text-white mx-2">
+        <div style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '0.75rem', backgroundColor: '#003366', padding: '0.5rem' }}>
+          <p style={{ margin: 0 }}>© Haven Hub - All rights reserved</p>
+          <div style={socialLinksStyle}>
+            <a href="/" style={{ color: 'white', margin: '0 0.5rem' }}>
               <FaFacebookF />
             </a>
-            <a href="/" className="text-white mx-2">
+            <a href="/" style={{ color: 'white', margin: '0 0.5rem' }}>
               <FaTwitter />
             </a>
-            <a href="/" className="text-white mx-2">
+            <a href="/" style={{ color: 'white', margin: '0 0.5rem' }}>
               <FaWhatsapp />
             </a>
-            <a href="/" className="text-white mx-2">
+            <a href="/" style={{ color: 'white', margin: '0 0.5rem' }}>
               <FaLinkedinIn />
             </a>
-            <a href="/" className="text-white mx-2">
+            <a href="/" style={{ color: 'white', margin: '0 0.5rem' }}>
               <FaInstagram />
             </a>
           </div>
