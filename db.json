@@ -15,7 +15,8 @@
       "images": [
         {
           "url": "https://img.freepik.com/premium-photo/modern-cottage-house-with-small-courtyard_250132-17013.jpg",
-          "alt": "Modern Cottage House with small courtyard"
+          "alt": "Modern Cottage House with small courtyard",
+          "content": "Modern Cottage featuring a cozy courtyard."
         }
       ],
       "status": "available",
@@ -36,7 +37,8 @@
       "images": [
         {
           "url": "https://img.freepik.com/premium-photo/beautiful-modern-suburban-home-with-white-siding-black-shutters-large-green-lawn-surrounded-by-trees-partly-cloudy-sky_124507-305066.jpg",
-          "alt": "Elegant Suburban Home with white siding and green lawn"
+          "alt": "Elegant Suburban Home with white siding and green lawn",
+          "content": "Elegant suburban home with expansive green lawn."
         }
       ],
       "status": "available",
@@ -57,7 +59,8 @@
       "images": [
         {
           "url": "https://img.freepik.com/premium-photo/3d-rendering-individual-modern-house_21255-27.jpg?semt=ais_hybrid",
-          "alt": "Luxurious modern residence with private gym and rooftop pool"
+          "alt": "Luxurious modern residence with private gym and rooftop pool",
+          "content": "Luxurious residence offering private gym and rooftop pool."
         }
       ],
       "status": "available",
@@ -76,36 +79,38 @@
         "Swimming Pool",
         "24/7 Security"
       ],
-      "images": {
-        "exterior": [
-          {
-            "url": "https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg",
-            "alt": "Modern 2-bedroom apartment exterior with city view"
-          },
-          {
-            "url": "https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg",
-            "alt": "Apartment building with panoramic city views"
-          },
-          {
-            "url": "https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg",
-            "alt": "High-rise apartment building with large windows"
-          }
-        ],
-        "interior": [
-          {
-            "url": "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg",
-            "alt": "Luxury living room with modern furniture"
-          },
-          {
-            "url": "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2721.jpg",
-            "alt": "Modern living room with a stunning view of the city"
-          },
-          {
-            "url": "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661469.jpg",
-            "alt": "Interior of an apartment with cityscape outside the window"
-          }
-        ]
-      },
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg",
+          "alt": "Modern 2-bedroom apartment exterior with city view",
+          "content": "Stylish apartment exterior with panoramic city views."
+        },
+        {
+          "url": "https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg",
+          "alt": "Apartment building with panoramic city views",
+          "content": "Modern apartment building offering breathtaking city views."
+        },
+        {
+          "url": "https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg",
+          "alt": "High-rise apartment building with large windows",
+          "content": "Spacious apartment building with expansive windows."
+        },
+        {
+          "url": "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg",
+          "alt": "Luxury living room with modern furniture",
+          "content": "Luxury living room featuring contemporary design and decor."
+        },
+        {
+          "url": "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2721.jpg",
+          "alt": "Modern living room with a stunning view of the city",
+          "content": "Sleek living room with a stunning city view."
+        },
+        {
+          "url": "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661469.jpg",
+          "alt": "Interior of an apartment with cityscape outside the window",
+          "content": "Elegant apartment interior with panoramic cityscape."
+        }
+      ],
       "status": "bought",
       "type": "apartment"
     }
