@@ -4,8 +4,8 @@ import AddHouse from "./AddHouse";
 
 function Houses() {
     const [houses, setHouses] = useState([]);
-    const [searchQuery, setSearchQuery] = useState("");  // State for search query
-    const [showForm, setShowForm] = useState(false);  // State to toggle the form visibility
+    const [searchQuery, setSearchQuery] = useState("");  
+    const [showForm, setShowForm] = useState(false);  
 
     useEffect(() => {
         const fetchHouses = async () => {
@@ -52,7 +52,7 @@ function Houses() {
         setSearchQuery(e.target.value);
     };
 
-    // Filter houses based on the search query
+ 
     const filteredHouses = houses.filter((house) => {
         const lowerCaseQuery = searchQuery.toLowerCase();
         return (
@@ -84,7 +84,7 @@ function Houses() {
                 />
             </div>
 
-            {/* Display filtered houses */}
+           
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: "20px", padding: "20px" }}>
                 {filteredHouses.length > 0 ? (
                     filteredHouses.map((house) => (
@@ -105,7 +105,7 @@ function Houses() {
                 )}
             </div>
 
-            {/* Button to toggle the form */}
+      
             <button
                 onClick={() => setShowForm(!showForm)}
                 style={{
@@ -121,7 +121,6 @@ function Houses() {
                 {showForm ? "Cancel" : "Add a New House"}
             </button>
 
-            {/* Conditionally render the AddHouse form */}
             {showForm && (
                 <div style={{ marginTop: "20px" }}>
                     <h3>Add a New House</h3>
