@@ -264,6 +264,14 @@
       ],
       "status": "sold",
       "type": "house"
+    },
+    {
+      "id": "e7ea",
+      "title": "BUngalow",
+      "location": "KIkuyu",
+      "price": "899998",
+      "status": "available",
+      "images": []
     }
   ]
 }

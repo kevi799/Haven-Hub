@@ -26,7 +26,7 @@ const Home = () => {
     margin: '0',
     color: '#ffffff',
     '@media (max-width: 768px)': {
-      fontSize: '2rem', // Adjust title font size on smaller screens
+      fontSize: '2rem', 
     },
   };
 
@@ -39,7 +39,7 @@ const Home = () => {
     marginRight: 'auto',
     lineHeight: '1.6',
     '@media (max-width: 768px)': {
-      fontSize: '1.2rem', // Adjust subtitle font size on smaller screens
+      fontSize: '1.2rem', 
     },
   };
 
@@ -51,7 +51,7 @@ const Home = () => {
     color: 'white',
     padding: '1rem',
     '@media (max-width: 768px)': {
-      padding: '0.5rem', // Reduce footer padding on small screens
+      padding: '0.5rem', 
     },
   };
 
@@ -63,22 +63,22 @@ const Home = () => {
     alignItems: 'center',
     padding: '0 1rem',
     '@media (max-width: 768px)': {
-      flexDirection: 'column', // Stack footer items vertically on smaller screens
-      textAlign: 'center', // Center text for mobile devices
+      flexDirection: 'column',
+      textAlign: 'center', 
     },
   };
 
   const contactSectionStyle = {
     textAlign: 'left',
     '@media (max-width: 768px)': {
-      textAlign: 'center', // Center contact info on small screens
+      textAlign: 'center', 
     },
   };
 
   const relatedLinksStyle = {
     textAlign: 'left',
     '@media (max-width: 768px)': {
-      textAlign: 'center', // Center related links on small screens
+      textAlign: 'center', 
     },
   };
 

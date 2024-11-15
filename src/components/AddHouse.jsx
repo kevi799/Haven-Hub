@@ -53,7 +53,8 @@ function AddHouse({ onAdd }) {
         padding: "20px",
         border: "1px solid #ddd",
         borderRadius: "8px",
-        backgroundColor: "#f9f9f9",
+        backgroundColor: "black",
+        color: "white",
     };
 
     const inputStyle = {
