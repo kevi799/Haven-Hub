@@ -1,118 +1,269 @@
 {
   "houses": [
     {
-      "id": "2",
-      "title": "Modern Cottage",
-      "location": "Suburban Neighborhood",
-      "price": 4500,
-      "description": "A modern cottage with a small courtyard and stylish design, located in a charming neighborhood.",
-      "size": "2400 sq ft",
+      "id": "1",
+      "title": "Modern Luxury Living Room",
+      "location": "Bangkok, Thailand",
+      "price": 5000,
+      "description": "A spacious and beautifully designed living room in a luxury home with modern features.",
+      "size": "1500 sq ft",
       "amenities": [
-        "Courtyard",
-        "Eco-Friendly Materials",
-        "Solar Panels"
+        "Modern Furniture",
+        "Spacious Living Area",
+        "City Views"
       ],
       "images": [
-        {
-          "url": "https://img.freepik.com/premium-photo/modern-cottage-house-with-small-courtyard_250132-17013.jpg",
-          "alt": "Modern Cottage House with small courtyard",
-          "content": "Modern Cottage featuring a cozy courtyard."
-        }
+        "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2721.jpg"
       ],
       "status": "available",
       "type": "house"
     },
     {
-      "id": "3",
-      "title": "Elegant Suburban Home",
-      "location": "Greenwood Estates",
-      "price": 5200,
-      "description": "A beautiful modern suburban home with white siding, black shutters, and a large green lawn.",
-      "size": "3600 sq ft",
+      "id": "2",
+      "title": "Cityscape View Living Room",
+      "location": "Bangkok, Thailand",
+      "price": 4500,
+      "description": "A contemporary living room with an expansive city view, perfect for urban living.",
+      "size": "1300 sq ft",
       "amenities": [
-        "Large Lawn",
-        "Tree-lined Surroundings",
-        "Modern Kitchen"
+        "City Views",
+        "Open Plan Design",
+        "Modern Lighting"
       ],
       "images": [
-        {
-          "url": "https://img.freepik.com/premium-photo/beautiful-modern-suburban-home-with-white-siding-black-shutters-large-green-lawn-surrounded-by-trees-partly-cloudy-sky_124507-305066.jpg",
-          "alt": "Elegant Suburban Home with white siding and green lawn",
-          "content": "Elegant suburban home with expansive green lawn."
-        }
+        "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661469.jpg"
+      ],
+      "status": "sold",
+      "type": "house"
+    },
+    {
+      "id": "3",
+      "title": "Urban Terrace Living Room",
+      "location": "Hong Kong",
+      "price": 4700,
+      "description": "A stylish terrace living room offering an amazing outdoor view and modern furnishings.",
+      "size": "1450 sq ft",
+      "amenities": [
+        "Terrace",
+        "Modern Furniture",
+        "Outdoor Views"
+      ],
+      "images": [
+        "https://img.freepik.com/free-photo/hong-kong-terrace_181624-6391.jpg"
       ],
       "status": "available",
       "type": "house"
     },
     {
       "id": "4",
-      "title": "Luxurious Residence",
-      "location": "Downtown",
-      "price": 7800,
-      "description": "An upscale modern residence with luxurious amenities, offering an elegant lifestyle in the city.",
-      "size": "5000 sq ft",
+      "title": "Luxury City Living",
+      "location": "New York, USA",
+      "price": 8000,
+      "description": "A high-end living room with panoramic city views and luxurious interior design.",
+      "size": "1800 sq ft",
       "amenities": [
-        "Private Gym",
-        "Rooftop Pool",
-        "Home Theater"
+        "Panoramic City Views",
+        "Luxury Furnishings",
+        "Open Plan Layout"
       ],
       "images": [
-        {
-          "url": "https://img.freepik.com/premium-photo/3d-rendering-individual-modern-house_21255-27.jpg?semt=ais_hybrid",
-          "alt": "Luxurious modern residence with private gym and rooftop pool",
-          "content": "Luxurious residence offering private gym and rooftop pool."
-        }
+        "https://img.freepik.com/premium-photo/low-angle-view-buildings-city_1048944-4008141.jpg"
+      ],
+      "status": "sold",
+      "type": "house"
+    },
+    {
+      "id": "5",
+      "title": "Illustrated Living Room Design",
+      "location": "Virtual Design",
+      "price": 3500,
+      "description": "A digital illustration of a modern living room design with contemporary elements.",
+      "size": "1200 sq ft",
+      "amenities": [
+        "Open Layout",
+        "Contemporary Design"
+      ],
+      "images": [
+        "https://img.freepik.com/premium-photo/illustration-living-room-interior_252025-45690.jpg"
       ],
       "status": "available",
       "type": "house"
     },
     {
-      "id": "1",
-      "title": "Spacious 2-Bedroom Apartment in Downtown",
-      "location": "Downtown, City Center",
-      "price": 1200,
-      "description": "A modern 2-bedroom apartment located in the heart of downtown, featuring open living spaces, a fully-equipped kitchen, and stunning city views.",
-      "size": "1200 sq ft",
+      "id": "6",
+      "title": "3D Bedroom Interior Design",
+      "location": "Virtual Design",
+      "price": 3800,
+      "description": "A 3D rendering of a modern bedroom with minimalistic design and comfortable features.",
+      "size": "900 sq ft",
       "amenities": [
-        "Balcony",
-        "Gym",
-        "Swimming Pool",
-        "24/7 Security"
+        "3D Design",
+        "Modern Furnishings"
       ],
       "images": [
-        {
-          "url": "https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg",
-          "alt": "Modern 2-bedroom apartment exterior with city view",
-          "content": "Stylish apartment exterior with panoramic city views."
-        },
-        {
-          "url": "https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg",
-          "alt": "Apartment building with panoramic city views",
-          "content": "Modern apartment building offering breathtaking city views."
-        },
-        {
-          "url": "https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg",
-          "alt": "High-rise apartment building with large windows",
-          "content": "Spacious apartment building with expansive windows."
-        },
-        {
-          "url": "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg",
-          "alt": "Luxury living room with modern furniture",
-          "content": "Luxury living room featuring contemporary design and decor."
-        },
-        {
-          "url": "https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2721.jpg",
-          "alt": "Modern living room with a stunning view of the city",
-          "content": "Sleek living room with a stunning city view."
-        },
-        {
-          "url": "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661469.jpg",
-          "alt": "Interior of an apartment with cityscape outside the window",
-          "content": "Elegant apartment interior with panoramic cityscape."
-        }
+        "https://img.freepik.com/free-photo/3d-modern-bedroom-interior_1048-7303.jpg"
       ],
-      "status": "bought",
-      "type": "apartment"
+      "status": "sold",
+      "type": "house"
+    },
+    {
+      "id": "7",
+      "title": "Contemporary Living Room",
+      "location": "Los Angeles, USA",
+      "price": 6000,
+      "description": "A chic and spacious living room with comfortable seating and a modern ambiance.",
+      "size": "1400 sq ft",
+      "amenities": [
+        "Modern Furnishings",
+        "Spacious Layout"
+      ],
+      "images": [
+        "https://img.freepik.com/free-photo/living-room-interior_1048-8212.jpg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "8",
+      "title": "Luxury Living Room Interior",
+      "location": "Tokyo, Japan",
+      "price": 5500,
+      "description": "A well-designed living room combining comfort and elegance, ideal for family gatherings.",
+      "size": "1600 sq ft",
+      "amenities": [
+        "Elegance",
+        "Comfortable Seating",
+        "Family Friendly"
+      ],
+      "images": [
+        "https://img.freepik.com/free-photo/vertical-shot-modern-table-nice-living-room_181624-59476.jpg"
+      ],
+      "status": "sold",
+      "type": "house"
+    },
+    {
+      "id": "9",
+      "title": "Hotel Room Living Room",
+      "location": "Paris, France",
+      "price": 4000,
+      "description": "A luxury hotel room designed for comfort and modernity, with upscale furnishings and great amenities.",
+      "size": "1100 sq ft",
+      "amenities": [
+        "Hotel Room Design",
+        "Luxury Fixtures"
+      ],
+      "images": [
+        "https://img.freepik.com/premium-photo/hotel-room_118342-1432.jpg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "10",
+      "title": "Modern Suburban House",
+      "location": "Suburban Area",
+      "price": 4600,
+      "description": "A cozy, modern suburban house with all the amenities for a comfortable family life.",
+      "size": "2000 sq ft",
+      "amenities": [
+        "Large Lawn",
+        "Modern Kitchen",
+        "Family Room"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg"
+      ],
+      "status": "sold",
+      "type": "house"
+    },
+    {
+      "id": "11",
+      "title": "Luxury Suburban House",
+      "location": "Greenwood Estates",
+      "price": 5100,
+      "description": "An elegant suburban house with a spacious interior and a large backyard.",
+      "size": "3000 sq ft",
+      "amenities": [
+        "Backyard",
+        "Spacious Living Room",
+        "Modern Design"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "12",
+      "title": "Luxury Urban House",
+      "location": "City Center",
+      "price": 7000,
+      "description": "A modern urban house with exceptional views and a contemporary design.",
+      "size": "3500 sq ft",
+      "amenities": [
+        "Panoramic Views",
+        "Open Plan Living"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "13",
+      "title": "City House with Modern Design",
+      "location": "Downtown",
+      "price": 4500,
+      "description": "A sleek, modern house located in downtown with easy access to city amenities.",
+      "size": "2800 sq ft",
+      "amenities": [
+        "City Views",
+        "Modern Design",
+        "Luxury Fixtures"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg"
+      ],
+      "status": "sold",
+      "type": "house"
+    },
+    {
+      "id": "14",
+      "title": "Suburban Living",
+      "location": "Suburban Neighborhood",
+      "price": 4800,
+      "description": "A spacious suburban home with a family-friendly layout and modern amenities.",
+      "size": "2200 sq ft",
+      "amenities": [
+        "Family Friendly",
+        "Large Backyard",
+        "Modern Fixtures"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/2194399/pexels-photo-2194399.jpeg"
+      ],
+      "status": "available",
+      "type": "house"
+    },
+    {
+      "id": "15",
+      "title": "Modern Cottage House",
+      "location": "Suburban Neighborhood",
+      "price": 4500,
+      "description": "A beautiful modern cottage house with eco-friendly materials and a small courtyard.",
+      "size": "2400 sq ft",
+      "amenities": [
+        "Eco-Friendly Materials",
+        "Courtyard",
+        "Solar Panels"
+      ],
+      "images": [
+        "https://img.freepik.com/premium-photo/modern-cottage-house-with-small-courtyard_250132-17013.jpg"
+      ],
+      "status": "sold",
+      "type": "house"
     }
   ]
 }
