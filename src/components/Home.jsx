@@ -25,7 +25,7 @@ const Home = () => {
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
     margin: '0',
     color: '#ffffff',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1000px)': {
       fontSize: '2rem', 
     },
   };
@@ -38,7 +38,7 @@ const Home = () => {
     marginLeft: 'auto',
     marginRight: 'auto',
     lineHeight: '1.6',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1000px)': {
       fontSize: '1.2rem', 
     },
   };
@@ -50,7 +50,7 @@ const Home = () => {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     color: 'white',
     padding: '1rem',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1000px)': {
       padding: '0.5rem', 
     },
   };
@@ -62,7 +62,7 @@ const Home = () => {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '0 1rem',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 800px)': {
       flexDirection: 'column',
       textAlign: 'center', 
     },
@@ -70,14 +70,14 @@ const Home = () => {
 
   const contactSectionStyle = {
     textAlign: 'left',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1000px)': {
       textAlign: 'center', 
     },
   };
 
   const relatedLinksStyle = {
     textAlign: 'left',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1000px)': {
       textAlign: 'center', 
     },
   };
@@ -86,7 +86,7 @@ const Home = () => {
     display: 'flex',
     justifyContent: 'center',
     marginTop: '0.5rem',
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1000px)': {
       justifyContent: 'center',
     },
   };

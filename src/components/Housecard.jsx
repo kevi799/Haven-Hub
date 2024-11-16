@@ -1,44 +1,56 @@
 import React from "react";
 
-function HouseCard({ id, title, location, price, status, onStatusChange, onDelete, images }) {
+function HouseCard({ house, onStatusChange, onDelete }) {
+    const { id, title, location, price, status, images } = house;
+
     const handleDelete = () => {
         if (window.confirm("Are you sure you want to delete this house?")) {
-            onDelete();
+            onDelete(id);
         }
     };
 
     return (
-        <div className="house-card" style={styles.card}>
-            <h3>{title}</h3>
-            <p><strong>Location:</strong> {location}</p>
-            <p><strong>Price:</strong> ${price}</p>
-            <p><strong>Status:</strong> {status}</p>
+        <div className="border rounded-lg shadow-md p-6 m-4 text-center bg-white">
+            <h3 className="text-lg font-semibold mb-2">{title}</h3>
+            <p className="text-sm text-gray-600 mb-1"><strong>Location:</strong> {location}</p>
+            <p className="text-sm text-gray-600 mb-1"><strong>Price:</strong> ${price}</p>
+            <p className={`text-sm font-medium mb-4 ${status === "available" ? "text-green-600" : "text-red-600"}`}>
+                <strong>Status:</strong> {status}
+            </p>
 
-            <div style={styles.imageContainer}>
+            {/* Display Images */}
+            <div className="flex flex-wrap gap-4 justify-center">
                 {images && images.length > 0 ? (
                     images.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`${title} - image ${index + 1}`}
-                            style={styles.image}
-                        />
+                        <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
+                            <div className="border rounded-lg shadow-lg overflow-hidden bg-white">
+                                <img
+                                    src={image}
+                                    alt={`${title} - image ${index + 1}`}
+                                    className="w-full h-48 object-cover rounded-md"
+                                />
+                                <div className="p-2 text-center">
+                                    <p className="text-sm text-gray-500">Image {index + 1}</p>
+                                </div>
+                            </div>
+                        </div>
                     ))
                 ) : (
-                    <p>No images available</p>
+                    <p className="text-sm text-gray-500">No images available</p>
                 )}
             </div>
 
-            <div style={styles.buttonContainer}>
+            {/* Action Buttons */}
+            <div className="flex justify-center gap-4 mt-4">
                 <button
                     onClick={() => onStatusChange(id, status === "available" ? "sold" : "available")}
-                    style={styles.statusButton}
+                    className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
                 >
                     {status === "available" ? "Mark as Sold" : "Mark as Available"}
                 </button>
                 <button
                     onClick={handleDelete}
-                    style={styles.deleteButton}
+                    className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition"
                 >
                     Delete
                 </button>
@@ -46,50 +58,5 @@ function HouseCard({ id, title, location, price, status, onStatusChange, onDelet
         </div>
     );
 }
-
-const styles = {
-    card: {
-        border: "1px solid #ccc",
-        borderRadius: "8px",
-        padding: "16px",
-        margin: "16px",
-        textAlign: "center",
-        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-    },
-    imageContainer: {
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        gap: "8px",
-        marginBottom: "16px",
-    },
-    image: {
-        width: "100px",
-        height: "100px",
-        objectFit: "cover",
-        borderRadius: "8px",
-    },
-    buttonContainer: {
-        display: "flex",
-        justifyContent: "center",
-        gap: "10px",
-    },
-    statusButton: {
-        padding: "8px 16px",
-        backgroundColor: "#28a745",
-        color: "#fff",
-        border: "none",
-        borderRadius: "4px",
-        cursor: "pointer",
-    },
-    deleteButton: {
-        padding: "8px 16px",
-        backgroundColor: "#dc3545",
-        color: "#fff",
-        border: "none",
-        borderRadius: "4px",
-        cursor: "pointer",
-    }
-};
 
 export default HouseCard;

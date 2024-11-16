@@ -244,7 +244,7 @@
       "images": [
         "https://images.pexels.com/photos/2194399/pexels-photo-2194399.jpeg"
       ],
-      "status": "available",
+      "status": "sold",
       "type": "house"
     },
     {
@@ -264,14 +264,6 @@
       ],
       "status": "sold",
       "type": "house"
-    },
-    {
-      "id": "e7ea",
-      "title": "BUngalow",
-      "location": "KIkuyu",
-      "price": "899998",
-      "status": "available",
-      "images": []
     }
   ]
 }

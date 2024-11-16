@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 function User() {
     const [houses, setHouses] = useState([]);
-    const [clickedHouseIds, setClickedHouseIds] = useState([]);
-    const [cart, setCart] = useState([]); // State for cart items
+    const [clickedHouseIds, setClickedHouseIds] = useState([]); // Array to track which houses' details are visible
 
     useEffect(() => {
         const fetchHouses = async () => {
@@ -12,7 +11,7 @@ function User() {
                 const response = await fetch("http://localhost:3000/houses");
                 const data = await response.json();
                 setHouses(data);
-                setClickedHouseIds(new Array(data.length).fill(false));
+                setClickedHouseIds(new Array(data.length).fill(false)); // Initialize the visibility array
             } catch (error) {
                 console.error("Error fetching houses:", error);
             }
@@ -22,19 +21,12 @@ function User() {
     }, []);
 
     const handleImageClick = (index) => {
+        // Toggle the details visibility for the clicked house
         setClickedHouseIds((prev) => {
             const newClickedHouseIds = [...prev];
-            newClickedHouseIds[index] = !newClickedHouseIds[index];
+            newClickedHouseIds[index] = !newClickedHouseIds[index]; // Toggle the specific house's visibility
             return newClickedHouseIds;
         });
-    };
-
-    const addToCart = (house) => {
-        setCart((prevCart) => [...prevCart, house]);
-    };
-
-    const removeFromCart = (houseId) => {
-        setCart((prevCart) => prevCart.filter((item) => item.id !== houseId));
     };
 
     return (
@@ -68,15 +60,12 @@ function User() {
                             )}
                         </div>
 
-                        {clickedHouseIds[index] && (
+                        {clickedHouseIds[index] && ( // Check the visibility for this specific house
                             <div style={{ marginTop: "10px" }}>
                                 <h3>{house.title}</h3>
                                 <p><strong>Location:</strong> {house.location}</p>
                                 <p><strong>Price:</strong> ${house.price}</p>
                                 <p><strong>Status:</strong> {house.status}</p>
-                                <button onClick={() => addToCart(house)} style={{ marginRight: "10px" }}>
-                                    Add to Cart
-                                </button>
                                 <Link to={`/houses/${house.id}`} style={{ color: "#4CAF50", textDecoration: "none" }}>
                                     View Full Details
                                 </Link>
@@ -84,20 +73,6 @@ function User() {
                         )}
                     </div>
                 ))}
-            </div>
-
-            <h2>Shopping Cart</h2>
-            <div>
-                {cart.length === 0 ? (
-                    <p>Your cart is empty.</p>
-                ) : (
-                    cart.map((item) => (
-                        <div key={item.id} style={{ margin: "10px 0" }}>
-                            <h3>{item.title}</h3>
-                            <button onClick={() => removeFromCart(item.id)}>Remove</button>
-                        </div>
-                    ))
-                )}
             </div>
         </div>
     );
