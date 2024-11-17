@@ -70,7 +70,7 @@ function Houses() {
     }
 
     return (
-        <div style={{ minHeight: "100vh", backgroundColor: "#f8f9fa", padding: "2rem" }}>
+        <div style={{ minHeight: "100vh", backgroundColor: "#1F2937", padding: "2rem" }}>
             <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "1rem" }}>
                 <h1 style={{ fontSize: "2rem", fontWeight: "bold", textAlign: "center", color: "#333", marginBottom: "1.5rem" }}>
                     Available Houses

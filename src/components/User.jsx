@@ -44,7 +44,7 @@ function User() {
     );
 
     return (
-        <div style={{ padding: "20px" }}>
+        <div style={{ padding: "20px", backGroundColor:"#1F2937"}}>
             <header style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
                
                 <h1 style={{ color: "black" }}>Housing App</h1>
