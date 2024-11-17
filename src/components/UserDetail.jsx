@@ -24,7 +24,7 @@ function UserDetail() {
     }
 
     return (
-        <div style={{ padding: "20px" }}>
+        <div style={{ padding: "20px"}}>
             <h2 style={{ color: "black" }}>{house.title}</h2>
             <p style={{ color: "black" }}><strong>Location:</strong> {house.location}</p>
             <p style={{ color: "black" }}><strong>Price:</strong> ${house.price}</p>

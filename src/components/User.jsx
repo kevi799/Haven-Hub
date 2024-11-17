@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 function User() {
     const [houses, setHouses] = useState([]);
     const [clickedHouseIds, setClickedHouseIds] = useState([]);
@@ -44,13 +43,19 @@ function User() {
     );
 
     return (
-        <div style={{ padding: "20px", backGroundColor:"#1F2937"}}>
-            <header style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
-               
-                <h1 style={{ color: "black" }}>Housing App</h1>
+        <div
+            style={{
+                backgroundColor: "#1F2937",
+                color: "white",
+                padding: "50px 20px",
+                minHeight: "100vh",
+            }}
+        >
+            <header style={{ display: "flex", alignItems: "center", marginBottom: "20px", textAlign: "center" }}>
+                <h1 style={{ color: "Gold" }}>Housing App</h1>
             </header>
 
-            <div style={{ marginBottom: "20px" }}>
+            <div style={{ marginBottom: "20px", textAlign: "center" }}>
                 <input
                     type="text"
                     placeholder="Search houses by title or location"
@@ -66,8 +71,8 @@ function User() {
                 />
             </div>
 
-            <h2 style={{ color: "black" }}>Available Houses</h2>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+            <h2>Available Houses</h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center" }}>
                 {filteredHouses.map((house, index) => (
                     <div
                         key={house.id}
@@ -79,6 +84,7 @@ function User() {
                             padding: "10px",
                             borderRadius: "8px",
                             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                            color: "black",
                         }}
                     >
                         <div onClick={() => handleImageClick(index)}>
@@ -94,16 +100,22 @@ function User() {
                                     }}
                                 />
                             ) : (
-                                <div style={{ color: "black" }}>No image available</div>
+                                <div>No image available</div>
                             )}
                         </div>
 
                         {clickedHouseIds[index] && (
-                            <div style={{ marginTop: "10px", color: "black" }}>
-                                <h3 style={{ color: "black" }}>{house.title}</h3>
-                                <p><strong>Location:</strong> {house.location}</p>
-                                <p><strong>Price:</strong> ${house.price}</p>
-                                <p><strong>Status:</strong> {house.status}</p>
+                            <div style={{ marginTop: "10px" }}>
+                                <h3>{house.title}</h3>
+                                <p>
+                                    <strong>Location:</strong> {house.location}
+                                </p>
+                                <p>
+                                    <strong>Price:</strong> ${house.price}
+                                </p>
+                                <p>
+                                    <strong>Status:</strong> {house.status}
+                                </p>
                                 <button
                                     onClick={() => handleAddToCart(house)}
                                     style={{
@@ -135,9 +147,9 @@ function User() {
             </div>
 
             <div style={{ marginTop: "40px" }}>
-                <h2 style={{ color: "black" }}>Cart</h2>
+                <h2>Cart</h2>
                 {cart.length === 0 ? (
-                    <p style={{ color: "black" }}>Your cart is empty.</p>
+                    <p>Your cart is empty.</p>
                 ) : (
                     <ul style={{ listStyle: "none", padding: 0 }}>
                         {cart.map((item) => (
@@ -148,11 +160,16 @@ function User() {
                                     marginBottom: "10px",
                                     backgroundColor: "#f1f1f1",
                                     borderRadius: "8px",
+                                    color: "black",
                                 }}
                             >
-                                <h3 style={{ color: "black" }}>{item.title}</h3>
-                                <p style={{ color: "black" }}><strong>Location:</strong> {item.location}</p>
-                                <p style={{ color: "black" }}><strong>Price:</strong> ${item.price}</p>
+                                <h3>{item.title}</h3>
+                                <p>
+                                    <strong>Location:</strong> {item.location}
+                                </p>
+                                <p>
+                                    <strong>Price:</strong> ${item.price}
+                                </p>
                             </li>
                         ))}
                     </ul>

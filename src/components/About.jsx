@@ -18,7 +18,7 @@ function AboutUs() {
                     About Haven Hub
                 </h1>
 
-                {/* History Section */}
+            
                 <section style={{ width: '100%', backgroundColor: '#374151', padding: '2rem 0' }}>
                     <div style={{ maxWidth: '1120px', margin: '0 auto', padding: '0 1rem' }}>
                         <h2

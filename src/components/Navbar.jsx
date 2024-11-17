@@ -91,7 +91,7 @@ function Navbar() {
             onMouseOver={(e) => (e.target.style.color = linkHoverStyle.color)}
             onMouseOut={(e) => (e.target.style.color = linkStyle.color)}
           >
-            User
+            Property
           </Link>
         </li>
       </ul>
