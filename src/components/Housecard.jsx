@@ -10,47 +10,77 @@ function HouseCard({ house, onStatusChange, onDelete }) {
     };
 
     return (
-        <div className="border rounded-lg shadow-md p-6 m-4 text-center bg-white">
-            <h3 className="text-lg font-semibold mb-2">{title}</h3>
-            <p className="text-sm text-gray-600 mb-1"><strong>Location:</strong> {location}</p>
-            <p className="text-sm text-gray-600 mb-1"><strong>Price:</strong> ${price}</p>
-            <p className={`text-sm font-medium mb-4 ${status === "available" ? "text-green-600" : "text-red-600"}`}>
+        <div style={{
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+            padding: "1rem",
+            margin: "1rem",
+            textAlign: "center",
+            backgroundColor: "white",
+            width: "300px"
+        }}>
+            <h3 style={{ fontSize: "1.2rem", fontWeight: "600", marginBottom: "0.5rem" }}>{title}</h3>
+            <p style={{ fontSize: "0.9rem", color: "gray", marginBottom: "0.5rem" }}>
+                <strong>Location:</strong> {location}
+            </p>
+            <p style={{ fontSize: "0.9rem", color: "gray", marginBottom: "0.5rem" }}>
+                <strong>Price:</strong> ${price}
+            </p>
+            <p style={{
+                fontSize: "0.9rem",
+                fontWeight: "500",
+                marginBottom: "1rem",
+                color: status === "available" ? "green" : "red"
+            }}>
                 <strong>Status:</strong> {status}
             </p>
 
-            {/* Display Images */}
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div style={{ marginBottom: "1rem" }}>
                 {images && images.length > 0 ? (
                     images.map((image, index) => (
-                        <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
-                            <div className="border rounded-lg shadow-lg overflow-hidden bg-white">
-                                <img
-                                    src={image}
-                                    alt={`${title} - image ${index + 1}`}
-                                    className="w-full h-48 object-cover rounded-md"
-                                />
-                                <div className="p-2 text-center">
-                                    <p className="text-sm text-gray-500">Image {index + 1}</p>
-                                </div>
-                            </div>
-                        </div>
+                        <img
+                            key={index}
+                            src={image}
+                            alt={`${title} - image ${index + 1}`}
+                            style={{
+                                width: "100%",
+                                height: "150px",
+                                objectFit: "cover",
+                                borderRadius: "4px",
+                                marginBottom: "0.5rem"
+                            }}
+                        />
                     ))
                 ) : (
-                    <p className="text-sm text-gray-500">No images available</p>
+                    <p style={{ fontSize: "0.8rem", color: "gray" }}>No images available</p>
                 )}
             </div>
 
-            {/* Action Buttons */}
-            <div className="flex justify-center gap-4 mt-4">
+            <div style={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
                 <button
                     onClick={() => onStatusChange(id, status === "available" ? "sold" : "available")}
-                    className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
+                    style={{
+                        padding: "0.5rem 1rem",
+                        backgroundColor: "green",
+                        color: "white",
+                        borderRadius: "4px",
+                        border: "none",
+                        cursor: "pointer"
+                    }}
                 >
                     {status === "available" ? "Mark as Sold" : "Mark as Available"}
                 </button>
                 <button
                     onClick={handleDelete}
-                    className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+                    style={{
+                        padding: "0.5rem 1rem",
+                        backgroundColor: "red",
+                        color: "white",
+                        borderRadius: "4px",
+                        border: "none",
+                        cursor: "pointer"
+                    }}
                 >
                     Delete
                 </button>

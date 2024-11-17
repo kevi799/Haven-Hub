@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function User() {
     const [houses, setHouses] = useState([]);
-    const [clickedHouseIds, setClickedHouseIds] = useState([]); // Array to track which houses' details are visible
+    const [clickedHouseIds, setClickedHouseIds] = useState([]);
 
     useEffect(() => {
         const fetchHouses = async () => {
@@ -11,7 +11,7 @@ function User() {
                 const response = await fetch("http://localhost:3000/houses");
                 const data = await response.json();
                 setHouses(data);
-                setClickedHouseIds(new Array(data.length).fill(false)); // Initialize the visibility array
+                setClickedHouseIds(new Array(data.length).fill(false));
             } catch (error) {
                 console.error("Error fetching houses:", error);
             }
@@ -21,17 +21,16 @@ function User() {
     }, []);
 
     const handleImageClick = (index) => {
-        // Toggle the details visibility for the clicked house
         setClickedHouseIds((prev) => {
             const newClickedHouseIds = [...prev];
-            newClickedHouseIds[index] = !newClickedHouseIds[index]; // Toggle the specific house's visibility
+            newClickedHouseIds[index] = !newClickedHouseIds[index];
             return newClickedHouseIds;
         });
     };
 
     return (
         <div style={{ padding: "20px" }}>
-            <h2>Available Houses</h2>
+            <h2 style={{ color: "black" }}>Available Houses</h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
                 {houses.map((house, index) => (
                     <div
@@ -41,6 +40,9 @@ function User() {
                             cursor: "pointer",
                             transition: "transform 0.3s ease",
                             backgroundColor: "#f9f9f9",
+                            padding: "10px",
+                            borderRadius: "8px",
+                            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                         }}
                     >
                         <div onClick={() => handleImageClick(index)}>
@@ -56,17 +58,20 @@ function User() {
                                     }}
                                 />
                             ) : (
-                                <div>No image available</div>
+                                <div style={{ color: "black" }}>No image available</div>
                             )}
                         </div>
 
-                        {clickedHouseIds[index] && ( // Check the visibility for this specific house
-                            <div style={{ marginTop: "10px" }}>
-                                <h3>{house.title}</h3>
+                        {clickedHouseIds[index] && (
+                            <div style={{ marginTop: "10px", color: "black" }}>
+                                <h3 style={{ color: "black" }}>{house.title}</h3>
                                 <p><strong>Location:</strong> {house.location}</p>
                                 <p><strong>Price:</strong> ${house.price}</p>
                                 <p><strong>Status:</strong> {house.status}</p>
-                                <Link to={`/houses/${house.id}`} style={{ color: "#4CAF50", textDecoration: "none" }}>
+                                <Link
+                                    to={`/houses/${house.id}`}
+                                    style={{ color: "#4CAF50", textDecoration: "none" }}
+                                >
                                     View Full Details
                                 </Link>
                             </div>
