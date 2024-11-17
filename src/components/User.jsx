@@ -11,7 +11,7 @@ function User() {
     useEffect(() => {
         const fetchHouses = async () => {
             try {
-                const response = await fetch("http://localhost:3000/houses");
+                const response = await fetch("https://haven-hub.onrender.com/houses");
                 const data = await response.json();
                 setHouses(data);
                 setClickedHouseIds(new Array(data.length).fill(false));

@@ -226,7 +226,7 @@
       "images": [
         "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg"
       ],
-      "status": "sold",
+      "status": "available",
       "type": "house"
     },
     {
@@ -262,7 +262,7 @@
       "images": [
         "https://img.freepik.com/premium-photo/modern-cottage-house-with-small-courtyard_250132-17013.jpg"
       ],
-      "status": "sold",
+      "status": "available",
       "type": "house"
     }
   ]

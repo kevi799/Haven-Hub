@@ -8,7 +8,7 @@ function UserDetail() {
     useEffect(() => {
         const fetchHouseDetails = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/houses/${id}`);
+                const response = await fetch(`https://haven-hub.onrender.com/houses/${id}`);
                 const data = await response.json();
                 setHouse(data);
             } catch (error) {

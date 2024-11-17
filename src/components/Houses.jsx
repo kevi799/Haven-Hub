@@ -8,7 +8,7 @@ function Houses() {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        fetch("http://localhost:3000/houses")
+        fetch("https://haven-hub.onrender.com/houses")
             .then(response => response.json())
             .then(data => {
                 setHouses(data);
@@ -22,7 +22,7 @@ function Houses() {
     }, []);
 
     const handleStatusChange = (id, status) => {
-        fetch(`http://localhost:3000/houses/${id}`, {
+        fetch(`https://haven-hub.onrender.com/houses/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -41,7 +41,7 @@ function Houses() {
     };
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:3000/houses/${id}`, {
+        fetch(`https://haven-hub.onrender.com/houses/${id}`, {
             method: "DELETE"
         })
         .then(() => {
