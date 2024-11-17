@@ -60,12 +60,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - **GitHub:** This repository is hosted on GitHub.
 
-## Usage
+## To View my app please visit
 
-The images within this repository can be used for a variety of purposes, such as:
-
-- **Real Estate Websites:** Showcase available properties to potential buyers.
-- **Interior Design Inspiration:** Provide ideas for home decor and renovation.
-- **Educational Materials:** Teach about different architectural styles and housing trends.
-- **Personal Projects:** Use as inspiration for creative projects, such as photography or art.
-  ` `m
+https://haven-hub-kevi799s-projects.vercel.app/
